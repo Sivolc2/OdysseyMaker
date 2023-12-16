@@ -7,7 +7,7 @@ from langchain.chains.summarize import load_summarize_chain
 llm = OpenAI(temperature=0)
 
 # Load the PDF
-pdf_path = "~/Downloads/notre_dame_short.pdf"
+pdf_path = "../files/notre_dame_shortest.pdf"
 loader = PyPDFLoader(pdf_path)
 pages = loader.load_and_split()
 
